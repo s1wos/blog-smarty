@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.pagination__item {
+  align-items: center;
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 999px;
+  color: $primary;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  min-width: 40px;
+  padding: 0 14px;
+  text-decoration: none;
+}
+
+.pagination__item--active {
+  background: $primary;
+  border-color: $primary;
+  color: $surface;
+}

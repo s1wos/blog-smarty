@@ -1,0 +1,62 @@
+@use "../variables" as *;
+
+.article {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 24px;
+  box-shadow: $shadow;
+  overflow: hidden;
+}
+
+.article__header {
+  padding: 40px 40px 22px;
+}
+
+.article__meta {
+  color: $muted;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-list a {
+  background: #eaf5fd;
+  border-radius: 999px;
+  color: $primary;
+  font-weight: 700;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.article__image {
+  aspect-ratio: 16 / 7;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article__content {
+  color: #374151;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  padding: 34px 40px 44px;
+}
+
+.article__content p:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .article__header,
+  .article__content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
