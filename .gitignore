@@ -5,3 +5,4 @@
 /cache/*
 !/cache/.gitkeep
 /public/css/style.css.map
+.idea/
